@@ -54,9 +54,9 @@ public class Server {
                 do {
                     String str = socketInput.readLine();
                     if (closeValue.equalsIgnoreCase(str)) {
-                        this.flag = false;
                         // 回送
                         socketOutput.println("bye");
+                        this.flag = false;
                     } else {
                         // 打印到屏幕，并回送数据长度
                         System.out.println(str);
